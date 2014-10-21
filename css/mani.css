@@ -1,0 +1,93 @@
+#cssmenusistema ul { margin: 0; padding: 0;}
+#cssmenusistema li { margin: 0; padding: 0;}
+#cssmenusistema a { margin: 0; padding: 0;}
+#cssmenusistema ul {list-style: none;}
+#cssmenusistema a {text-decoration: none;}
+#cssmenusistema {	height: 50px;
+			background-color: rgb(35,35,35);
+			box-shadow: 0px 1px 3px rgba(0,0,0,.4);}
+
+#cssmenusistema > ul > li {   float: left;
+					margin-left: 100px;
+					position: relative;}
+#cssmenusistema > ul > li > a {    color:white;
+						font-family: Verdana, 'Lucida Grande';
+						font-size: 15px;
+						Line-height: 50px;
+						padding: 10px 20px; //*modificar el ancho del menú *//
+						-webkit-transition: color .15s;
+						-moz-transition: color .15s;
+						-o-transition: color .15s;
+						transition: color .15s;}
+#cssmenusistema > ul > li > a:hover {color: rgb(400),250,250); }
+
+#cssmenusistema > ul > li > ul {    opacity: 0;
+						visibility: hidden;
+						padding: 10px 0 10px 0; /*modificar largo del menu desplegable*/
+						background-color: rgb(250,250,250);
+						text-align: left;
+						position: absolute;
+						top: 70px;
+						left: 70%;
+						margin-left: -90px;
+						width: 130px;
+						-webkit-transition: all .3s .1s;
+						-moz-transition: all .3s .1s;
+						-o-transition: all .3s .1s;
+						transition: all .3s .1s;
+						-webkit-border-radius: 5px;
+						-moz-border-radius: 5px;
+						border-radius: 20px;
+						-webkit-box-shadow: 0px 1px 3px rgba(0,0,0,.4);
+						-moz-box-shadow: 0px 1px 3px rgba(0,0,0,.4);
+						box-shadow: 0px 1px 3px rgba(0,0,0,.4);}
+#cssmenusistema > ul > li:hover > ul { 	opacity: 1;
+							top: 65px;
+							visibility: visible;}
+#cssmenusistema > ul > li > ul:before{    	content: '';
+								display: block;
+								border-color: transparent transparent rgb(250,250,250) transparent;
+								border-style: solid;
+								border-width: 30px;
+								position: absolute;
+								top: -10px;
+								left: 35%;
+								margin-left: -10px;}
+#cssmenusistema > ul ul > li { position: relative;}
+#cssmenusistema ul ul a{  color: rgb(50,50,50);
+				font-family: Verdana, 'Lucida Grande';
+				font-size: 13px;
+				background-color: rgb(250,250,250);
+				padding: 5px 8px 7px 16px;
+				display: block;
+				-webkit-transition: background-color .1s;
+				-moz-transition: background-color .1s;
+				-o-transition: background-color .1s;
+				transition: background-color .1s;}
+#cssmenusistema ul ul a:hover {background-color: rgb(240,240,240);}
+
+#cssmenusistema ul ul ul { visibility: hidden;
+				opacity: 0;
+				position: absolute;
+				top: -12px;
+				left: 110px;
+				padding: 15px 0 10px 0;
+				background-color: rgb(250,250,250);
+				text-align: center;
+				width: 100px;
+				-webkit-transition: all .3s;
+				-moz-transition: all .3s;
+				-o-transition: all .3s;
+				transition: all .3s;
+				-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+				border-radius: 5px;
+				-webkit-box-shadow: 0px 1px 3px rgba(0,0,0,.4);
+				-moz-box-shadow: 0px 1px 3px rgba(0,0,0,.4);        
+				box-shadow: 0px 1px 3px rgba(0,0,0,.4);}
+
+#cssmenusistema ul ul > li:hover > ul { opacity: 1; left: 132px; visibility: visible;}
+
+#cssmenusistema ul ul a:hover{    background-color: rgb(205,44,36);
+						color: rgb(240,240,240);
+						}
